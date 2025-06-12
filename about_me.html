@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>À propos - Mulobe Arielle</title>
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">Mulobe Arielle</div>
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="navbar">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="#">À propos</a></li>
+        <li><a href="nos_realisations.html">Réalisations</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <section class="about-section">
+    <h1>À propos de moi</h1>
+    <p>Je suis étudiante à l’Université Nouveaux Horizons à Lubumbashi.<br>
+      Passionnée de technologie et de mode, j’aime coder et créer.<br>
+      Mon parcours universitaire m’a permis d’acquérir des compétences solides en développement web, en programmation Python et en gestion de projets numériques.<br>
+      J’aime relever de nouveaux défis, apprendre en continu et partager mes connaissances avec les autres.<br>
+      En dehors de la technologie, je m’intéresse à la création de contenu, à la mode et à l’innovation.<br>
+      Mon objectif est de contribuer à des projets créatifs et impactants, tout en développant mes compétences professionnelles et personnelles.
+    </p>
+  </section>
+
+  <section class="skills-section">
+    <h2>Compétences</h2>
+    <div class="skills-grid">
+      <div class="skill-card">HTML / CSS / JavaScript</div>
+      <div class="skill-card">Python & Génie logiciel</div>
+      <div class="skill-card">Création de contenu & mode</div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; <span id="year"></span> - Mulobe Arielle</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navbar = document.querySelector('.navbar');
+
+    mobileMenu.addEventListener('click', () => {
+      navbar.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Mulobe Arielle</title>
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">Mulobe Arielle</div>
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="navbar">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="about_me.html">À propos</a></li>
+        <li><a href="nos_realisations.html">Réalisations</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <section class="contact-section">
+    <h1>Me contacter</h1>
+
+    <div class="contact-container">
+      <form>
+        <h2>Envoyer un message</h2>
+        <input type="text" placeholder="Nom" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Message" rows="5" required></textarea>
+        <button type="submit">Envoyer</button>
+      </form>
+
+      <div class="contact-info">
+        <h3>Mes coordonnées</h3>
+        <p>Tél : +243 995 281 103</p>
+        <p>Tél : +243 828 899 454</p>
+
+        <div class="social-links">
+          <a href="mailto:mulobearielle0@gmail.com" class="fa fa-envelope" title="Email"></a>
+          <a href="https://facebook.com/" class="fa fa-facebook" target="_blank"></a>
+          <a href="https://www.linkedin.com/in/arielle-mulobe" class="fa fa-linkedin" target="_blank"></a>
+          <a href="https://instagram.com/" class="fa fa-instagram" target="_blank"></a>
+          <a href="https://wa.me/243995281103" class="fa fa-whatsapp" target="_blank"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; <span id="year"></span> - Mulobe Arielle</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navbar = document.querySelector('.navbar');
+
+    mobileMenu.addEventListener('click', () => {
+      navbar.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>

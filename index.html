@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mulobe Arielle – Portfolio</title>
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">Mulobe Arielle</div>
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="navbar">
+        <li><a href="#">Accueil</a></li>
+        <li><a href="about_me.html">À propos</a></li>
+        <li><a href="nos_realisations.html">Réalisations</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Salut, moi c'est Mulobe Manga Manga Arielle</h1>
+      <p>Étudiante Génie Logiciel passionnée de tech & mode</p>
+      <a href="nos_realisations.html" class="btn">Voir mes réalisations</a>
+    </div>
+    <div class="hero-img">
+      <img src="images/P1078087.jpg" alt="Portrait de Mulobe Manga Manga" class="profile-photo">
+    </div>
+  </section>
+
+
+  <section class="projects">
+    <h2>Mes Projets</h2>
+    <div class="project-card">
+      <h3><a href="https://master-engineering-drc.github.io/web/" target="_blank">Master Engineering Drc</a></h3>
+      <p>
+        Application web dédiée à la présentation d’une entreprise et de ses services, offrant une interface moderne et responsive. 
+        <br>
+        Elle intègre un simulateur interactif permettant aux utilisateurs d’estimer leur consommation énergétique et de dimensionner les équipements adaptés à leurs besoins.
+      </p>
+      <p>
+        Le simulateur guide l’utilisateur à travers différentes étapes : saisie des données de consommation, choix des équipements, et affichage des résultats détaillés avec graphiques et recommandations personnalisées.
+      </p>
+      <p>
+        L’application comprend également une section de contact, une galerie de réalisations, et un espace d’administration pour la gestion des contenus et des demandes clients.
+      </p>
+    </div>
+    <div class="project-card">
+      <h3><a href="#" target="_blank">jeux Avanture </a></h3>
+      <p>L’univers d’Arielle est un jeu 2D développé en Python avec la bibliothèque Pygame. Le joueur doit collecter des pièces et affronter différents ennemis tout en progressant à travers plusieurs niveaux de difficulté croissante. Chaque niveau intègre des mécaniques de score, des combats de boss et des obstacles dynamiques. Le jeu supporte à la fois les contrôles clavier et manette pour une meilleure jouabilité. L’ensemble du projet est structuré en plusieurs modules pour une organisation de code optimale.</p>
+    </div>
+    <div class="project-card">
+      <h3><a href="#" target="_blank">USAFICO</a></h3>
+      <p>
+        Application Web et mobile dédiée à l’assainissement urbain et à la gestion intelligente des déchets. USAFICO permet aux citoyens de signaler les zones nécessitant un nettoyage et de planifier des collectes de déchets.
+      </p>
+      <p>
+        Les utilisateurs peuvent suivre le recyclage des déchets collectés via une interface intuitive. La plateforme propose également des outils de sensibilisation à l’environnement pour encourager de meilleures pratiques.
+      </p>
+      <p>
+        Un système de suivi et de récompenses valorise les utilisateurs engagés, favorisant la réutilisation des matériaux récupérés et renforçant l’impact positif sur la communauté.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Mulobe Arielle – <a href="mailto:mulobearielle0@gmail.com">mulobearielle0@gmail.com</a></p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navbar = document.querySelector('.navbar');
+
+    mobileMenu.addEventListener('click', () => {
+      navbar.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>

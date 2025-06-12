@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Réalisations - Mulobe Arielle</title>
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+        <div class="logo">Mulobe Arielle</div>
+        <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        </div>
+        <ul class="navbar">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="about_me.html">À propos</a></li>
+        <li><a href="#">Réalisations</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    </header>
+
+
+  <section class="realisations-section">
+    <h1>Mes Réalisations</h1>
+
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="images/WhatsApp Image 2025-06-10 à 13.19.36_e26117bb.jpg" alt="Projet 1">
+        <div class="overlay">Projet 1</div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/WhatsApp Image 2025-06-10 à 13.19.39_13bf6d9e.jpg" alt="Projet 2">
+        <div class="overlay">Projet 2</div>
+      </div>
+      
+      <div class="gallery-item">
+        <img src="images/WhatsApp Image 2025-06-10 à 13.19.47_fb29d6f6.jpg" alt="Projet 4">
+        <div class="overlay">Projet 4</div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/WhatsApp Image 2025-06-10 à 13.19.51_76f963d9.jpg" alt="Projet 5">
+        <div class="overlay">Projet 5</div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/WhatsApp Image 2025-06-10 à 13.19.57_936f934f.jpg" alt="Projet 6">
+        <div class="overlay">Projet 6</div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; <span id="year"></span> - Mulobe Arielle</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navbar = document.querySelector('.navbar');
+
+    mobileMenu.addEventListener('click', () => {
+      navbar.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>
